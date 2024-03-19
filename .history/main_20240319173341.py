@@ -22,7 +22,7 @@ for i in range(5):
         print("You win!")
         sys.exit(0)
     else:
-        all_guesses += result[0] + "\n"
+        all_guesses += result + "\n"
         print(all_guesses)
 
 

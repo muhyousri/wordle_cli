@@ -18,7 +18,6 @@ reset_color = '\033[0m'  # Reset to default color
 
 
 def compare_words(solution, guess):
-    result = "lose"
     output = ""
     if solution == guess:
         for i in range(len(solution)):

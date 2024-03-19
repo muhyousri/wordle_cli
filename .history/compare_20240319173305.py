@@ -18,13 +18,12 @@ reset_color = '\033[0m'  # Reset to default color
 
 
 def compare_words(solution, guess):
-    result = "lose"
     output = ""
     if solution == guess:
         for i in range(len(solution)):
             output = output + green_color + \
                 guess[i] + " " + reset_color
-            result = "win"
+            result = win
     else:
         for i in range(len(solution)):
             if guess[i] in solution:

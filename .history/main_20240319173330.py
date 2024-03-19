@@ -17,12 +17,12 @@ for i in range(5):
     guess = input("Guess the word: ").lower()
     result = compare.compare_words(word, guess)
     if result[1] == "win":
-        all_guesses += result[0] + "\n"
+        all_guesses += result + "\n"
         print(all_guesses)
         print("You win!")
         sys.exit(0)
     else:
-        all_guesses += result[0] + "\n"
+        all_guesses += result + "\n"
         print(all_guesses)
 
 
