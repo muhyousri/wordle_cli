@@ -25,9 +25,9 @@ def compare_words(solution, guess):
         for i in range(len(solution)):
             if guess[i] in solution:
                 if guess[i] == solution[i]:
-                    output = output + green_color + guess[i] + " "
+                    output = output + green_color + "guess[i]"
                 else:
-                    output = output + yellow_color + guess[i] + " "
+                    output = output + yellow_color + "guess[i]"
             else:
-                output = output + red_color + guess[i] + " "
+                output = output + red_color + "guess[i]"
     return output
